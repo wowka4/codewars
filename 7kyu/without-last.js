@@ -12,7 +12,7 @@ function withoutLast(arr) {
 function solution(arr) {
     // Fix it
     // arr.pop(); // removes the last element
-
+    return arr.slice(0, -1);
 }
 
 console.log('Solution: ', solution([1,2,3,6,77,90,4]));
