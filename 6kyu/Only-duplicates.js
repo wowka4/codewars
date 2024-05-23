@@ -3,7 +3,7 @@ Example:
 input: "abccdefee"
 output: "cceee"*/
 
-// Slower solution:
+// Slower solution, working time: 0.042417049407958984
 
 function onlyDuplicates(str) {
     let result = '';
@@ -21,9 +21,12 @@ function onlyDuplicates(str) {
     }
     return result;
 }
-
-console.log(onlyDuplicates("abccdefee"));
-
-// Faster solution:
 const str = 'cccdfrggga';
-console.log(str.split('').filter(e => str.indexOf(e) !== str.lastIndexOf(e)).join(''));
+
+console.log(onlyDuplicates(str));
+
+// Faster solution, working time: 0.027541160583496094
+function a(str) {
+    return str.split('').filter(e => str.indexOf(e) !== str.lastIndexOf(e)).join('');
+}
+console.log(a(str));
