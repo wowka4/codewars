@@ -9,4 +9,4 @@ Return a table with one column (mod) which is the output of number1 modulus numb
 
 Solution: 
 
-SELECT number1 * number2 AS mod FROM decimals
+SELECT number1 % number2 AS mod FROM decimals
