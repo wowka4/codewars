@@ -6,8 +6,8 @@ highAndLow("1 2 -3 4 5"); // return "5 -3"
 highAndLow("1 9 3 4 -5"); // return "9 -5"*/
 // Solution:
 function highAndLow(numbers){
-    const min = Math.min(...numbers.toString().split(' ').map(Number));
-    const max = Math.max(...numbers.toString().split(' ').map(Number));
+    const min = Math.min(...numbers.split(' ').map(Number));
+    const max = Math.max(...numbers.split(' ').map(Number));
     return `${max} ${min}`;
 }
 
