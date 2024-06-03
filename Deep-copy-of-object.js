@@ -22,4 +22,4 @@ let person = {
 };
 
 const newPerson = deepCopy(person);
-console.log(person === newPerson);
+console.log(person.name === newPerson.name);
