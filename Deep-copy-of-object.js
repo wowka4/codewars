@@ -1,13 +1,3 @@
-let person = {
-    name: 'John',
-    email: 'john@example.com',
-    info: {
-        isMarried: true,
-        hasChild: false,
-        hasCar: false,
-    }
-};
-
 function deepCopy(obj) {
     const newObj = {};
     const keys = Object.keys(obj);
@@ -20,5 +10,16 @@ function deepCopy(obj) {
     }
     return newObj;
 }
+
+let person = {
+    name: 'John',
+    email: 'john@example.com',
+    info: {
+        isMarried: true,
+        hasChild: false,
+        hasCar: false,
+    }
+};
+
 const newPerson = deepCopy(person);
 console.log(person === newPerson);
