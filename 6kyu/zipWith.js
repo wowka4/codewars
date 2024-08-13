@@ -20,4 +20,4 @@ function zipWith(fn,a0,a1) {
     return result;
 }
 
-console.log(zipWith((a,b) => a+b, [0,1,2,3], [0,1,2,3]));
+// console.log(zipWith((a,b) => a+b, [0,1,2,3], [0,1,2,3]));
